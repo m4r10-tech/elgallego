@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marisquería El Gallego · Toledo</title>
+  <meta name="description" content="Marisquería El Gallego, en la Avenida de Madrid 20 de Toledo. Marisco gallego, ostras, zamburiñas y mariscadas. Martes a domingo, mediodía y noche.">
+  <meta name="theme-color" content="#0d1b24">
+  <meta property="og:title" content="Marisquería El Gallego · Toledo">
+  <meta property="og:description" content="Marisco gallego en Toledo. Avenida de Madrid, 20.">
+  <meta property="og:type" content="restaurant">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SeafoodRestaurant",
+    "name": "Marisquería El Gallego",
+    "servesCuisine": ["Marisco", "Cocina gallega"],
+    "telephone": "+34 925 21 51 22",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Avenida de Madrid, 20",
+      "postalCode": "45003",
+      "addressLocality": "Toledo",
+      "addressCountry": "ES"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "13:00", "closes": "17:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday"], "opens": "20:00", "closes": "23:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Thursday","Friday","Saturday","Sunday"], "opens": "20:00", "closes": "23:59" }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Símbolo de vieira reutilizable -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="shell" viewBox="0 0 64 64">
+      <g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M32 54 C14 50 6 34 9 22 C12 12 22 8 32 8 C42 8 52 12 55 22 C58 34 50 50 32 54 Z"/>
+        <path d="M32 54 L32 9"/>
+        <path d="M32 54 L23 10"/>
+        <path d="M32 54 L41 10"/>
+        <path d="M32 54 L15 14"/>
+        <path d="M32 54 L49 14"/>
+        <path d="M32 54 L10 24"/>
+        <path d="M32 54 L54 24"/>
+        <path d="M24 54 L20 60 L44 60 L40 54"/>
+      </g>
+    </symbol>
+  </svg>
+
+  <a class="skip" href="#carta">Saltar a la carta</a>
+
+  <!-- ================= CABECERA ================= -->
+  <header class="nav" data-nav>
+    <a class="brand" href="#top" aria-label="El Gallego, inicio">
+      <svg class="brand__mark" aria-hidden="true"><use href="#shell"/></svg>
+      <span class="brand__word">El Gallego</span>
+      <span class="brand__sub">Marisquería · Toledo</span>
+    </a>
+
+    <nav class="nav__links" aria-label="Principal">
+      <a href="#casa">La casa</a>
+      <a href="#carta">Carta</a>
+      <a href="#galeria">Galería</a>
+      <a href="#visita">Visítanos</a>
+    </nav>
+
+    <a class="pill" href="#horario" data-status-pill>
+      <span class="pill__dot"></span>
+      <span class="pill__text">Consultando…</span>
+    </a>
+
+    <button class="nav__burger" type="button" aria-label="Abrir menú" aria-expanded="false" data-burger>
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <div class="drawer" data-drawer hidden>
+    <a href="#casa">La casa</a>
+    <a href="#carta">Carta</a>
+    <a href="#galeria">Galería</a>
+    <a href="#visita">Visítanos</a>
+    <a class="drawer__tel" href="tel:+34925215122">925 21 51 22</a>
+  </div>
+
+  <main id="top">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="hero__media" data-hero>
+        <figure class="ph hero__slide is-on" data-label="Ostras gallegas">
+          <img src="https://images.unsplash.com/photo-1615141982883-c7ad0e69fd62?auto=format&fit=crop&w=2000&q=80" alt="Ostras frescas sobre hielo" fetchpriority="high">
+        </figure>
+        <figure class="ph hero__slide" data-label="Pescado a la brasa">
+          <img src="https://images.unsplash.com/photo-1485921325833-c519f76c4927?auto=format&fit=crop&w=2000&q=80" alt="Pescado a la plancha emplatado">
+        </figure>
+        <figure class="ph hero__slide" data-label="El comedor">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=2000&q=80" alt="Mesa servida en el comedor">
+        </figure>
+      </div>
+      <div class="hero__shade"></div>
+
+      <div class="hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow rv">Avenida de Madrid, 20 — Toledo</p>
+          <h1 class="hero__title" data-split>
+            Del Atlántico<br><em>a la mesa toledana.</em>
+          </h1>
+          <p class="hero__lead rv">
+            Ostras, zamburiñas, nécoras y pulpo á feira. Producto que llega de las rías,
+            se cuece al punto y se sirve sin artificio.
+          </p>
+          <div class="hero__cta rv">
+            <a class="btn btn--light" href="tel:+34925215122" data-magnet>Reservar mesa</a>
+            <a class="btn btn--ghost" href="#carta" data-magnet>Ver la carta</a>
+          </div>
+        </div>
+
+        <!-- ===== MONITOR ABIERTO / CERRADO ===== -->
+        <aside class="monitor rv" id="horario" aria-live="polite">
+          <div class="monitor__head">
+            <span class="mono">Estado en directo</span>
+            <span class="mono monitor__clock" data-clock>--:--:--</span>
+          </div>
+
+          <div class="flap" data-flap aria-label="Estado"></div>
+
+          <p class="monitor__msg" data-status-msg>Calculando…</p>
+
+          <div class="timeline" aria-hidden="true">
+            <div class="timeline__track" data-timeline></div>
+            <div class="timeline__now" data-now><span></span></div>
+            <div class="timeline__ticks mono">
+              <span>00</span><span>06</span><span>12</span><span>18</span><span>24</span>
+            </div>
+          </div>
+
+          <button class="monitor__toggle mono" type="button" aria-expanded="false" data-week-toggle>
+            Horario semanal <span aria-hidden="true">+</span>
+          </button>
+          <ul class="week" data-week hidden></ul>
+          <p class="monitor__foot mono">Hora de Toledo (CET)</p>
+        </aside>
+      </div>
+
+      <div class="hero__dots" data-hero-dots aria-hidden="true"></div>
+      <a class="hero__scroll mono" href="#casa">Desliza <span></span></a>
+    </section>
+
+    <!-- ================= MARQUESINA ================= -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track" data-marquee>
+        <span>Zamburiñas</span><svg><use href="#shell"/></svg>
+        <span>Ostras</span><svg><use href="#shell"/></svg>
+        <span>Pulpo á feira</span><svg><use href="#shell"/></svg>
+        <span>Nécoras</span><svg><use href="#shell"/></svg>
+        <span>Percebes</span><svg><use href="#shell"/></svg>
+        <span>Mariscada</span><svg><use href="#shell"/></svg>
+        <span>Navajas</span><svg><use href="#shell"/></svg>
+        <span>Gamba blanca</span><svg><use href="#shell"/></svg>
+      </div>
+    </div>
+
+    <!-- ================= LA CASA ================= -->
+    <section class="casa" id="casa">
+      <div class="casa__grid">
+        <div class="casa__text">
+          <p class="eyebrow rv">01 — La casa</p>
+          <h2 class="h2" data-split>Una barra gallega<br><em>a 500 km del mar.</em></h2>
+          <p class="rv">
+            En El Gallego el marisco manda. Lo que entra por la puerta cada mañana decide
+            la pizarra del día: si la nécora viene buena, hay nécora; si no, no.
+            Cocción justa, sal gorda, aceite y pimentón. Lo demás sobra.
+          </p>
+          <p class="rv">
+            Mesas para la mariscada larga del domingo y barra para la ración rápida
+            con un albariño frío. Mediodía y noche, de martes a domingo.
+          </p>
+
+          <dl class="facts rv">
+            <div><dt class="mono">Servicio</dt><dd>Mediodía y noche</dd></div>
+            <div><dt class="mono">Abierto</dt><dd>Martes a domingo</dd></div>
+            <div><dt class="mono">Descanso</dt><dd>Lunes</dd></div>
+          </dl>
+        </div>
+
+        <div class="casa__media">
+          <figure class="ph casa__img casa__img--a" data-speed="-0.06" data-label="El comedor">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80" alt="Comedor del restaurante" loading="lazy">
+          </figure>
+          <figure class="ph casa__img casa__img--b" data-speed="0.08" data-label="Zamburiñas">
+            <img src="https://images.unsplash.com/photo-1559737558-2f5a35f4523b?auto=format&fit=crop&w=900&q=80" alt="Plato de marisco" loading="lazy">
+          </figure>
+          <div class="stamp" data-speed="0.14" aria-hidden="true">
+            <svg viewBox="0 0 200 200">
+              <defs><path id="circ" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+              <text><textPath href="#circ">MARISCO DE LAS RÍAS · COCIDO AL PUNTO · TOLEDO · </textPath></text>
+            </svg>
+            <svg class="stamp__shell"><use href="#shell"/></svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CARTA ================= -->
+    <section class="carta" id="carta">
+      <div class="carta__head">
+        <p class="eyebrow eyebrow--light rv">02 — La carta</p>
+        <h2 class="h2 h2--light" data-split>Lo que trae <em>la marea.</em></h2>
+        <p class="carta__note rv">Selección orientativa. El marisco se sirve a precio de mercado (S/M) y cambia según temporada y lonja.</p>
+      </div>
+
+      <div class="tabs rv" role="tablist" aria-label="Secciones de la carta">
+        <button role="tab" aria-selected="true" data-tab="mariscos">Mariscos</button>
+        <button role="tab" aria-selected="false" data-tab="raciones">Raciones</button>
+        <button role="tab" aria-selected="false" data-tab="pescados">Pescados</button>
+        <button role="tab" aria-selected="false" data-tab="menu">Menú del día</button>
+      </div>
+
+      <div class="carta__body">
+        <ul class="dishes is-on" role="tabpanel" data-panel="mariscos">
+          <li data-img="https://images.unsplash.com/photo-1615141982883-c7ad0e69fd62?auto=format&fit=crop&w=700&q=80">
+            <span class="d-name">Mariscada El Gallego</span><span class="d-desc">Para dos. Nécora, cigala, gamba, langostino, mejillón y zamburiña</span><span class="d-price">S/M</span></li>
+          <li data-img="https://images.unsplash.com/photo-1615141982883-c7ad0e69fd62?auto=format&fit=crop&w=700&q=80">
+            <span class="d-name">Ostras gallegas</span><span class="d-desc">Al natural, con limón</span><span class="d-price">S/M</span></li>
+          <li data-img="https://images.unsplash.com/photo-1559737558-2f5a35f4523b?auto=format&fit=crop&w=700&q=80">
+            <span class="d-name">Zamburiñas a la plancha</span><span class="d-desc">Ajo, perejil y un hilo de aceite</span><span class="d-price">S/M</span></li>
+          <li data-img="https://images.unsplash.com/photo-1559737558-2f5a35f4523b?auto=format&fit=crop&w=700&q=80">
+            <span class="d-name">Nécoras cocidas</span><span class="d-desc">Cocción con sal de mar</span><span class="d-price">S/M</span></li>
+          <li data-img="https://images.unsplash.com/photo-1615141982883-c7ad0e69fd62?auto=format&fit=crop&w=700&q=80">
+            <span class="d-name">Percebes</span><span class="d-desc">Según disponibilidad</span><span class="d-price">S/M</span></li>
+          <li data-img="https://images.unsplash.com/photo-1559737558-2f5a35f4523b?auto=format&fit=crop&w=700&q=80">
+            <span class="d-name">Gamba blanca de Huelva</span><span class="d-desc">Cocida o a la plancha</span><span class="d-price">S/M</span></li>
+        </ul>
+
+        <ul class="dishes" role="tabpanel" data-panel="raciones" hidden>
+          <li data-img="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=700&q=80">
+            <span class="d-name">Pulpo á feira</span><span class="d-desc">Cachelos, pimentón de la Vera y sal gorda</span><span class="d-price">Ración</span></li>
+          <li data-img="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=700&q=80">
+            <span class="d-name">Navajas a la plancha</span><span class="d-desc">Limón y aceite de oliva</span><span class="d-price">Ración</span></li>
+          <li data-img="https://images.unsplash.com/photo-1534080564583-6be75777b70a?auto=format&fit=crop&w=700&q=80">
+            <span class="d-name">Almejas a la marinera</span><span class="d-desc">Salsa para mojar pan</span><span class="d-price">Ración</span></li>
+          <li data-img="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=700&q=80">
+            <span class="d-name">Pimientos de Padrón</span><span class="d-desc">Unos pican, otros no</span><span class="d-price">Ración</span></li>
+          <li data-img="https://images.unsplash.com/photo-1534080564583-6be75777b70a?auto=format&fit=crop&w=700&q=80">
+            <span class="d-name">Mejillones al vapor</span><span class="d-desc">De batea gallega</span><span class="d-price">Ración</span></li>
+          <li data-img="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=700&q=80">
+            <span class="d-name">Calamares a la romana</span><span class="d-desc">Rebozado fino, limón</span><span class="d-price">Ración</span></li>
+        </ul>
+
+        <ul class="dishes" role="tabpanel" data-panel="pescados" hidden>
+          <li data-img="https://images.unsplash.com/photo-1485921325833-c519f76c4927?auto=format&fit=crop&w=700&q=80">
+            <span class="d-name">Lubina a la espalda</span><span class="d-desc">Refrito de ajo y guindilla</span><span class="d-price">S/M</span></li>
+          <li data-img="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=700&q=80">
+            <span class="d-name">Merluza a la gallega</span><span class="d-desc">Patata cocida, ajada y pimentón</span><span class="d-price">S/M</span></li>
+          <li data-img="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=700&q=80">
+            <span class="d-name">Rodaballo a la plancha</span><span class="d-desc">Pieza entera para compartir</span><span class="d-price">S/M</span></li>
+          <li data-img="https://images.unsplash.com/photo-1485921325833-c519f76c4927?auto=format&fit=crop&w=700&q=80">
+            <span class="d-name">Dorada a la sal</span><span class="d-desc">Costra de sal, jugosa por dentro</span><span class="d-price">S/M</span></li>
+        </ul>
+
+        <div class="dishes menu-dia" role="tabpanel" data-panel="menu" hidden>
+          <div class="menu-dia__card">
+            <p class="mono">Entre semana · mediodía</p>
+            <p class="menu-dia__price">15<span>€</span></p>
+            <p class="menu-dia__inc">Primero, segundo, pan y bebida</p>
+          </div>
+          <p class="menu-dia__text">
+            Cocina de mercado que cambia cada día. Pregunta en barra o llámanos
+            para saber qué hay hoy en la pizarra.
+          </p>
+          <a class="btn btn--light" href="tel:+34925215122" data-magnet>Llamar al 925 21 51 22</a>
+        </div>
+      </div>
+
+      <figure class="cursor-img" data-cursor-img aria-hidden="true"><img alt=""></figure>
+    </section>
+
+    <!-- ================= GALERÍA ================= -->
+    <section class="gal" id="galeria" data-gal>
+      <div class="gal__sticky">
+        <div class="gal__head">
+          <div>
+            <p class="eyebrow rv">03 — Galería</p>
+            <h2 class="h2" data-split>El local, la cocina<br><em>y lo que no se ve.</em></h2>
+          </div>
+          <div class="chips rv" role="group" aria-label="Filtrar galería">
+            <button class="is-on" data-filter="all">Todo</button>
+            <button data-filter="local">El local</button>
+            <button data-filter="comida">La comida</button>
+            <button data-filter="detras">Por detrás</button>
+          </div>
+        </div>
+
+        <div class="gal__viewport">
+          <div class="gal__track" data-gal-track>
+            <figure class="ph card card--tall" data-cat="local" data-label="Comedor">
+              <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1100&q=80" alt="Comedor del restaurante" loading="lazy">
+              <figcaption><span class="mono">Local</span>El comedor</figcaption>
+            </figure>
+            <figure class="ph card" data-cat="comida" data-label="Ostras">
+              <img src="https://images.unsplash.com/photo-1615141982883-c7ad0e69fd62?auto=format&fit=crop&w=1100&q=80" alt="Ostras sobre hielo" loading="lazy">
+              <figcaption><span class="mono">Comida</span>Ostras al natural</figcaption>
+            </figure>
+            <figure class="ph card card--wide" data-cat="detras" data-label="La cocina">
+              <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=1400&q=80" alt="Cocina en pleno servicio" loading="lazy">
+              <figcaption><span class="mono">Por detrás</span>En pleno servicio</figcaption>
+            </figure>
+            <figure class="ph card" data-cat="local" data-label="La barra">
+              <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1100&q=80" alt="La barra" loading="lazy">
+              <figcaption><span class="mono">Local</span>La barra</figcaption>
+            </figure>
+            <figure class="ph card card--tall" data-cat="comida" data-label="Pescado">
+              <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=1100&q=80" alt="Pescado emplatado" loading="lazy">
+              <figcaption><span class="mono">Comida</span>Pescado del día</figcaption>
+            </figure>
+            <figure class="ph card" data-cat="detras" data-label="Emplatado">
+              <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=1100&q=80" alt="Cocinero emplatando" loading="lazy">
+              <figcaption><span class="mono">Por detrás</span>El pase</figcaption>
+            </figure>
+            <figure class="ph card card--wide" data-cat="comida" data-label="Marisco">
+              <img src="https://images.unsplash.com/photo-1534080564583-6be75777b70a?auto=format&fit=crop&w=1400&q=80" alt="Marisco para compartir" loading="lazy">
+              <figcaption><span class="mono">Comida</span>Para compartir</figcaption>
+            </figure>
+            <figure class="ph card" data-cat="local" data-label="Mesas">
+              <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=1100&q=80" alt="Mesas preparadas" loading="lazy">
+              <figcaption><span class="mono">Local</span>Mesas listas</figcaption>
+            </figure>
+            <figure class="ph card card--tall" data-cat="detras" data-label="Mise en place">
+              <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=1100&q=80" alt="Preparación en cocina" loading="lazy">
+              <figcaption><span class="mono">Por detrás</span>Mise en place</figcaption>
+            </figure>
+            <figure class="ph card" data-cat="comida" data-label="Pescado">
+              <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=1100&q=80" alt="Pescado fresco" loading="lazy">
+              <figcaption><span class="mono">Comida</span>De la lonja</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="gal__progress" aria-hidden="true"><span data-gal-bar></span></div>
+      </div>
+    </section>
+
+    <!-- ================= VISITA ================= -->
+    <section class="visita" id="visita">
+      <div class="visita__grid">
+        <div class="visita__info">
+          <p class="eyebrow rv">04 — Visítanos</p>
+          <h2 class="h2" data-split>Te guardamos<br><em>la mejor mesa.</em></h2>
+
+          <div class="info rv">
+            <div>
+              <p class="mono">Dirección</p>
+              <p>Avenida de Madrid, 20<br>45003 Toledo</p>
+              <a class="link" href="https://www.google.com/maps/dir/?api=1&destination=Marisquer%C3%ADa+El+Gallego+Avenida+de+Madrid+20+Toledo" target="_blank" rel="noopener">Cómo llegar →</a>
+            </div>
+            <div>
+              <p class="mono">Reservas</p>
+              <p><a class="big-tel" href="tel:+34925215122">925 21 51 22</a></p>
+              <p class="muted">Recomendado fines de semana</p>
+            </div>
+            <div>
+              <p class="mono">Horario</p>
+              <p>Martes a domingo · 13:00 – 17:00<br>Noches: mar–mié hasta 23:30 · jue–dom hasta 00:00<br>Lunes cerrado</p>
+              <p class="status-inline" data-status-inline></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="map rv">
+          <iframe title="Mapa: Marisquería El Gallego, Avenida de Madrid 20, Toledo"
+            src="https://www.google.com/maps?q=Marisquer%C3%ADa+El+Gallego,+Avenida+de+Madrid+20,+45003+Toledo&output=embed"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= PIE ================= -->
+  <footer class="foot">
+    <div class="foot__big" aria-hidden="true">El Gallego</div>
+    <div class="foot__row">
+      <p>Marisquería El Gallego · Av. de Madrid, 20 · Toledo</p>
+      <p><a href="tel:+34925215122">925 21 51 22</a></p>
+      <p>© <span data-year></span></p>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lb" data-lb hidden role="dialog" aria-modal="true" aria-label="Imagen ampliada">
+    <button class="lb__close" type="button" aria-label="Cerrar" data-lb-close>×</button>
+    <button class="lb__nav lb__nav--prev" type="button" aria-label="Anterior" data-lb-prev>←</button>
+    <figure class="lb__fig"><img alt="" data-lb-img><figcaption data-lb-cap></figcaption></figure>
+    <button class="lb__nav lb__nav--next" type="button" aria-label="Siguiente" data-lb-next>→</button>
+  </div>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
