@@ -221,6 +221,7 @@
         <button role="tab" aria-selected="true" data-tab="mariscos">Mariscos</button>
         <button role="tab" aria-selected="false" data-tab="raciones">Raciones</button>
         <button role="tab" aria-selected="false" data-tab="pescados">Pescados</button>
+        <button role="tab" aria-selected="false" data-tab="carnes">Carnes</button>
         <button role="tab" aria-selected="false" data-tab="postres">Postres</button>
         <button role="tab" aria-selected="false" data-tab="menu">Menú del día</button>
       </div>
@@ -265,6 +266,13 @@
             <span class="d-name">Rodaballo a la plancha</span><span class="d-desc">Pieza entera para compartir</span><span class="d-price">S/M</span></li>
           <li data-img="https://images.unsplash.com/photo-1485921325833-c519f76c4927?auto=format&fit=crop&w=700&q=80">
             <span class="d-name">Dorada a la sal</span><span class="d-desc">Costra de sal, jugosa por dentro</span><span class="d-price">S/M</span></li>
+        </ul>
+
+        <ul class="dishes" role="tabpanel" data-panel="carnes" hidden>
+          <li data-img="assets/img/entrecot.jpg">
+            <span class="d-name">Entrecot a la plancha</span><span class="d-desc">Patatas fritas y ensalada de lechuga y tomate</span><span class="d-price">Plato</span></li>
+          <li>
+            <span class="d-name">Carnes del día</span><span class="d-desc">Para quien no es de marisco: pregunta en sala</span><span class="d-price">Plato</span></li>
         </ul>
 
         <ul class="dishes" role="tabpanel" data-panel="postres" hidden>
@@ -333,9 +341,9 @@
               <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=1100&q=80" alt="Cocinero emplatando" loading="lazy">
               <figcaption><span class="mono">Por detrás</span>El pase</figcaption>
             </figure>
-            <figure class="ph card card--wide" data-cat="comida" data-label="Marisco">
-              <img src="https://images.unsplash.com/photo-1534080564583-6be75777b70a?auto=format&fit=crop&w=1400&q=80" alt="Marisco para compartir" loading="lazy">
-              <figcaption><span class="mono">Comida</span>Para compartir</figcaption>
+            <figure class="ph card" data-cat="comida" data-label="Entrecot">
+              <img src="assets/img/entrecot.jpg" alt="Entrecot a la plancha con patatas fritas y ensalada" loading="lazy">
+              <figcaption><span class="mono">Comida</span>Entrecot a la plancha</figcaption>
             </figure>
             <figure class="ph card" data-cat="local" data-label="Mesas">
               <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=1100&q=80" alt="Mesas preparadas" loading="lazy">

@@ -377,11 +377,11 @@
       const px = cx;
       cx += (tx - cx) * 0.16; cy += (ty - cy) * 0.16;
       rot += (clamp((cx - px) * 0.6, -12, 12) - rot) * 0.2;
-      cimg.style.transform = `translate3d(${cx}px, ${cy}px, 0) translate(-50%, -50%) rotate(${rot}deg) scale(${active ? 1 : .85})`;
+      cimg.style.transform = `translate3d(${cx}px, ${cy}px, 0) translate(0, -50%) rotate(${rot}deg) scale(${active ? 1 : .85})`;
       raf = requestAnimationFrame(loop);
     };
     $('.carta__body').addEventListener('mousemove', (e) => {
-      tx = e.clientX + 150; ty = e.clientY;
+      tx = e.clientX + 56; ty = e.clientY;
       const li = e.target.closest('li[data-img]');
       if (li) {
         if (cimgImg.getAttribute('src') !== li.dataset.img) cimgImg.src = li.dataset.img;
