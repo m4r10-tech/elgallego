@@ -221,6 +221,7 @@
         <button role="tab" aria-selected="true" data-tab="mariscos">Mariscos</button>
         <button role="tab" aria-selected="false" data-tab="raciones">Raciones</button>
         <button role="tab" aria-selected="false" data-tab="pescados">Pescados</button>
+        <button role="tab" aria-selected="false" data-tab="postres">Postres</button>
         <button role="tab" aria-selected="false" data-tab="menu">Menú del día</button>
       </div>
 
@@ -264,6 +265,13 @@
             <span class="d-name">Rodaballo a la plancha</span><span class="d-desc">Pieza entera para compartir</span><span class="d-price">S/M</span></li>
           <li data-img="https://images.unsplash.com/photo-1485921325833-c519f76c4927?auto=format&fit=crop&w=700&q=80">
             <span class="d-name">Dorada a la sal</span><span class="d-desc">Costra de sal, jugosa por dentro</span><span class="d-price">S/M</span></li>
+        </ul>
+
+        <ul class="dishes" role="tabpanel" data-panel="postres" hidden>
+          <li data-img="assets/img/flan-casero.jpg">
+            <span class="d-name">Flan casero</span><span class="d-desc">Con nata montada y caramelo</span><span class="d-price">Casero</span></li>
+          <li>
+            <span class="d-name">Postres del día</span><span class="d-desc">Pregunta en sala por los dulces caseros de hoy</span><span class="d-price">Casero</span></li>
         </ul>
 
         <div class="dishes menu-dia" role="tabpanel" data-panel="menu" hidden>
@@ -337,9 +345,9 @@
               <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=1100&q=80" alt="Preparación en cocina" loading="lazy">
               <figcaption><span class="mono">Por detrás</span>Mise en place</figcaption>
             </figure>
-            <figure class="ph card" data-cat="comida" data-label="Pescado">
-              <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=1100&q=80" alt="Pescado fresco" loading="lazy">
-              <figcaption><span class="mono">Comida</span>De la lonja</figcaption>
+            <figure class="ph card" data-cat="comida" data-label="Flan casero">
+              <img src="assets/img/flan-casero.jpg" alt="Flan casero con nata montada y caramelo" loading="lazy">
+              <figcaption><span class="mono">Comida</span>Flan casero</figcaption>
             </figure>
           </div>
         </div>
