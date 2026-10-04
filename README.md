@@ -26,5 +26,5 @@ coloca los archivos en `assets/img/` y cambia el `src` de cada `<img>` en `index
 Si una imagen no carga, se muestra un marcador con el nombre de la foto.
 
 ## Pendiente de confirmar con el restaurante
-- Teléfono (en fuentes públicas aparecen 925 21 51 22 y 925 21 25 82).
+- Teléfono: 925 21 25 82 (confirmado en Google).
 - Platos de la carta y precio del menú del día (15 €).
